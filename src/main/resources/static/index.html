@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello,Springboot------</h1>
+<a href="/hello">hello</a>
+<h1>测试增删改</h1>
+    <form method="get" action="/user">
+        <input type="submit" value="get方式提交">
+    </form>
+    <form method="post" action="/user">
+        <input type="submit" value="post方式提交">
+    </form>
+
+    <form method="post" action="/user">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="delete方式提交">
+    </form>
+    <form method="post" action="/user">
+        <input type="hidden" name="_method" value="put">
+        <input type="submit" value="put 方式提交">
+    </form>
+<h1>--------------------------------------</h1>
+    <a href="/car/1/owner/ssq">/car/{id}/owner/{username}</a>
+    <p>@PathVariable用法</p>
+    <p>@MatrixVariable 矩阵变量用法</p>
+    <a href="/boss/1;age=20/2;age=25">/boss/1;age=20/2;age=25</a>
+    <a href="/car/sell;low=35;brand=audi,byd,benz">/car/sell;low=35,bran=auti,byd,bchi</a>
+    </body>
+</html>

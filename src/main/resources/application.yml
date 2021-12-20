@@ -1,0 +1,16 @@
+spring:
+  web:
+    resources:          #默认是true 开启处理静态资源
+      add-mappings: true     #设置false后  Default resource handling disabled  禁用默认资源处理器
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+    contentnegotiation:     #开启基于请求参数的内容协商
+      favor-parameter: true
+
+#  mvc:        #改变默认静态资源路径
+#   static-path-pattern: /res/**
+#  web:
+#    resources:   这个设置的是所有静态资源路径必须放在 类路径下/haha/路径下
+#      static-locations: [classpath:/haha/]
